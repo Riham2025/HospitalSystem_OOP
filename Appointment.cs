@@ -20,5 +20,14 @@ namespace HospitalSystem_OOP
         public Patient Patient { get => patient; set => patient = value; }
         public DateTime AppointmentDate { get => appointmentDate; set => appointmentDate = value; }
 
+
+        // Overloaded constructor for Appointment class
+        public Appointment(int id, Doctor doctor, Patient patient, DateTime date)
+        {
+            appointmentId = id;
+            this.doctor = doctor;
+            this.patient = patient;
+            appointmentDate = date;
+        }
     }
 }
