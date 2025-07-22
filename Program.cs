@@ -119,7 +119,7 @@
                     return;
                 }
 
-                if (appointments.Any(a => a.Doctor.Id == doctorId && a.AppointmentDate == date))
+                if (appointments.Any(a => a.Doctor.Id == doctorId && a.AppointmentDate == date)) // Check if the doctor is already booked at that time
                 {
                     Console.WriteLine(" This doctor is already booked at that time.");
                     return;
