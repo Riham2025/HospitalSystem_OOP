@@ -8,7 +8,7 @@ namespace HospitalSystem_OOP
 {
     class Doctor : Person //Doctor class inherits from Person
     {
-        private string specialization;
+        private string specialization; //specialization of the doctor
         private List<DateTime> availableAppointments;
 
         public string Specialization { get => specialization; set => specialization = value; }
