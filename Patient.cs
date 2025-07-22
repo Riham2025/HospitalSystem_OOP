@@ -11,7 +11,7 @@ namespace HospitalSystem_OOP
         private string phoneNumber; // phone number of the patient
         public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; } // phone number property  
 
-        public Patient(int id, string name, int age, string phoneNumber)
+        public Patient(int id, string name, int age, string phoneNumber) // Overloaded constructor for Patient class
             : base(id, name, age)
         {
             this.phoneNumber = phoneNumber;
