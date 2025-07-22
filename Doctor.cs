@@ -21,7 +21,7 @@ namespace HospitalSystem_OOP
             this.availableAppointments = new List<DateTime>();
         }
 
-        public override void DisplayInfo()
+        public override void DisplayInfo() // Overriding the DisplayInfo method from the Person class
         {
             Console.WriteLine($"Doctor: {Name}, Age: {Age}, Specialization: {specialization}");
         }
