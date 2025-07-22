@@ -14,6 +14,7 @@ namespace HospitalSystem_OOP
         private Patient patient;
         private DateTime appointmentDate;
 
+        // Default constructor
         public int AppointmentId { get => appointmentId; set => appointmentId = value; }
         public Doctor Doctor { get => doctor; set => doctor = value; }
         public Patient Patient { get => patient; set => patient = value; }
