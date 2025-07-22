@@ -98,7 +98,7 @@
             private List<Appointment> appointments = new List<Appointment>();
             private int appointmentCounter = 1;
 
-            public void AddDoctor(Doctor doctor)
+            public void AddDoctor(Doctor doctor) // Method to add a doctor
             {
                 doctors.Add(doctor);
             }
