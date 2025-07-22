@@ -12,5 +12,8 @@ namespace HospitalSystem_OOP
         private string name;
         private int age;
 
+
+        public int Id { get => id; set => id = value; }
+
     }
 }
