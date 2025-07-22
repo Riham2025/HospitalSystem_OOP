@@ -8,5 +8,9 @@ namespace HospitalSystem_OOP
 {
     class Person
     {
+        private int id;
+        private string name;
+        private int age;
+
     }
 }
