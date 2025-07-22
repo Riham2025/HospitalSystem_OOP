@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Hospital hospital = new Hospital();
+            Hospital hospital = new Hospital(); // Create an instance of the Hospital class
             bool running = true;
 
             while (running)
@@ -81,18 +81,19 @@
 
                     case "0":
                         running = false;
-                        Console.WriteLine("Exiting...");
+                        Console.WriteLine("Exiting");
                         break;
 
                     default:
-                        Console.WriteLine("❌ Invalid option.");
+                        Console.WriteLine(" Invalid option.");
                         break;
                 }
             }
         }
         public class Hospital
         {
-            private List<Doctor> doctors = new List<Doctor>();
+            // Properties for Hospital class
+            private List<Doctor> doctors = new List<Doctor>(); 
             private List<Patient> patients = new List<Patient>();
             private List<Appointment> appointments = new List<Appointment>();
             private int appointmentCounter = 1;
