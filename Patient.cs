@@ -17,7 +17,7 @@ namespace HospitalSystem_OOP
             this.phoneNumber = phoneNumber;
         }
 
-        public override void DisplayInfo()
+        public override void DisplayInfo() // Overriding the DisplayInfo method from the Person class
         {
             Console.WriteLine($"Patient: {Name}, Age: {Age}, Phone: {phoneNumber}");
         }
