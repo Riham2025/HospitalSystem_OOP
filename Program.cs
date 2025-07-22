@@ -126,11 +126,11 @@
                 }
 
                 Appointment appointment = new Appointment(appointmentCounter++, doctor, patient, date); // Create a new appointment
-                appointments.Add(appointment);
+                appointments.Add(appointment); // Add the appointment to the list
                 Console.WriteLine(" Appointment booked successfully.");
             }
 
-            public void ShowAppointments()
+            public void ShowAppointments() // Method to show all appointments
             {
                 foreach (var appointment in appointments)
                 {
