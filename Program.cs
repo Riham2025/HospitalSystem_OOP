@@ -125,7 +125,7 @@
                     return;
                 }
 
-                Appointment appointment = new Appointment(appointmentCounter++, doctor, patient, date);
+                Appointment appointment = new Appointment(appointmentCounter++, doctor, patient, date); // Create a new appointment
                 appointments.Add(appointment);
                 Console.WriteLine(" Appointment booked successfully.");
             }
