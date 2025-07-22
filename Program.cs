@@ -138,7 +138,7 @@
                 }
             }
 
-            public void ShowDoctorsBySpecialization(string specialization)
+            public void ShowDoctorsBySpecialization(string specialization) // Method to show doctors by specialization
             {
                 var filtered = doctors.Where(d => d.Specialization.Equals(specialization, StringComparison.OrdinalIgnoreCase));
                 foreach (var doc in filtered)
