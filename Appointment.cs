@@ -29,5 +29,10 @@ namespace HospitalSystem_OOP
             this.patient = patient;
             appointmentDate = date;
         }
+
+        public void Display() // Method to display appointment details
+        {
+            Console.WriteLine($"Appointment ID: {appointmentId}, Doctor: {doctor.Name}, Patient: {patient.Name}, Date: {appointmentDate}");
+        }
     }
 }
