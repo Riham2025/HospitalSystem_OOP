@@ -23,7 +23,7 @@ namespace HospitalSystem_OOP
 
         public override void DisplayInfo() // Overriding the DisplayInfo method from the Person class
         {
-            Console.WriteLine($"Doctor: {Name}, Age: {Age}, Specialization: {specialization}");
+           Console.WriteLine($"Doctor: {Name}, Age: {Age}, Specialization: {specialization}"); 
         }
     }
 }
