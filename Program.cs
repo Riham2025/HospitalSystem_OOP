@@ -147,7 +147,7 @@
                 }
             }
 
-            public void SearchAppointmentsByPatientName(string name)
+            public void SearchAppointmentsByPatientName(string name) // Method to search appointments by patient name
             {
                 var results = appointments.Where(a => a.Patient.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
                 foreach (var a in results)
