@@ -8,7 +8,7 @@ namespace HospitalSystem_OOP
 {
     class Patient : Person //Patient class inherits from Person
     {
-        private string phoneNumber;
+        private string phoneNumber; // phone number of the patient
         public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
 
         public Patient(int id, string name, int age, string phoneNumber)
