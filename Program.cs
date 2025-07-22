@@ -103,17 +103,17 @@
                 doctors.Add(doctor);
             }
 
-            public void AddPatient(Patient patient)
+            public void AddPatient(Patient patient) // Method to add a patient
             {
                 patients.Add(patient);
             }
 
-            public void BookAppointment(int doctorId, int patientId, DateTime date)
+            public void BookAppointment(int doctorId, int patientId, DateTime date) // Method to book an appointment`
             {
-                Doctor doctor = doctors.FirstOrDefault(d => d.Id == doctorId);
+                Doctor doctor = doctors.FirstOrDefault(d => d.Id == doctorId); 
                 Patient patient = patients.FirstOrDefault(p => p.Id == patientId);
 
-                if (doctor == null || patient == null)
+                if (doctor == null || patient == null) // Check if doctor or patient exists
                 {
                     Console.WriteLine(" Doctor or Patient not found.");
                     return;
