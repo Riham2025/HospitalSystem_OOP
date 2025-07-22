@@ -156,7 +156,7 @@
                 }
             }
 
-            public void SearchAppointmentsByDate(DateTime date)
+            public void SearchAppointmentsByDate(DateTime date) // Method to search appointments by date
             {
                 var results = appointments.Where(a => a.AppointmentDate.Date == date.Date);
                 foreach (var a in results)
