@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HospitalSystem_OOP
 {
-    class Person
+    class Person //Base class: Person (for inheritance)
     {
         // Fields
         private int id;
@@ -24,6 +24,12 @@ namespace HospitalSystem_OOP
             this.id = id;
             this.name = name;
             this.age = age;
+        }
+
+        // Overloaded constructor
+        public virtual void DisplayInfo()
+        {
+            Console.WriteLine($"Name: {name}, Age: {age}");
         }
 
     }
