@@ -2,9 +2,7 @@
 {
     internal class Program
     {
-        static List<Doctor> doctors = new List<Doctor>(); // List to store doctors
-        static List<Patient> patients = new List<Patient>(); // List to store patients
-        static List<Appointment> appointments = new List<Appointment>(); // List to store appointments
+   
         static void Main(string[] args)
         {
             Hospital hospital = new Hospital(); // Create an instance of the Hospital class
