@@ -19,5 +19,11 @@ namespace HospitalSystem_OOP
         {
             return id > 0;
         }
+
+        // Validates if age is reasonable (e.g., 0–120)
+        public static bool IsValidAge(int age)
+        {
+            return age >= 0 && age <= 120;
+        }
     }
 }
