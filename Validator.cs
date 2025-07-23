@@ -13,5 +13,11 @@ namespace HospitalSystem_OOP
         {
             return !string.IsNullOrWhiteSpace(input);
         }
+
+        // Validates if an integer is positive
+        public static bool IsValidId(int id)
+        {
+            return id > 0;
+        }
     }
 }
