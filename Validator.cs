@@ -25,5 +25,11 @@ namespace HospitalSystem_OOP
         {
             return age >= 0 && age <= 120;
         }
+
+        // Validates if phone number is at least 8 digits and only numeric
+        public static bool IsValidPhoneNumber(string phone)
+        {
+            return !string.IsNullOrWhiteSpace(phone) && phone.Length >= 8 && long.TryParse(phone, out _);
+        }
     }
 }
