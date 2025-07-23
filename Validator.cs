@@ -8,6 +8,10 @@ namespace HospitalSystem_OOP
 {
     public static class Validator
     {
-
+        // Validates if a string is not null or empty
+        public static bool IsValidName(string input)
+        {
+            return !string.IsNullOrWhiteSpace(input);
+        }
     }
 }
