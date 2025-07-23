@@ -31,5 +31,11 @@ namespace HospitalSystem_OOP
         {
             return !string.IsNullOrWhiteSpace(phone) && phone.Length >= 8 && long.TryParse(phone, out _);
         }
+
+        // Validates if a DateTime is in the future
+        public static bool IsFutureDate(DateTime date)
+        {
+            return date > DateTime.Now;
+        }
     }
 }
